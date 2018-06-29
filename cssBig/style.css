@@ -1,0 +1,805 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+}
+.site-wrap{
+    width: 100%;
+    height: 100%;
+}
+header{
+    height: 80%;
+    background: #324B63;
+    position: relative;
+}
+header .back{
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/back.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.3;
+}
+header h1{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    font-size: 3em;
+    font-weight: 100;
+    position: absolute;
+    top: 30%;
+    line-height: 1.5em;
+    border-bottom: 3px solid white;
+    width: 90%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+.mobileMenu .head{
+    color: #fff;
+    width: 100%;
+    background: #000;
+    text-align: center;
+    opacity: 0.8;
+    margin: 0;
+    position: fixed;
+    z-index: 10;
+    height: 50px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1em;
+}
+.mobileMenu .head a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 15px;
+    padding-top: 20px;
+}
+.mobileMenu .head a .menu-icon{
+    position: absolute;
+    top: 1rem;
+    right: 2em;
+}
+.mobileMenu .head a .menu-icon i{
+    color: #fff;
+    font-size: 1.5rem;
+}
+.mobileMenu .content{
+    background: #000;
+    opacity: 0.9;
+    top: 50px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    display: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+}
+.mobileMenu .content ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+.mobileMenu .content ul li{
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    width: 80%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-top: 10px; 
+}
+.mobileMenu .content ul a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+.mobileMenu .content ul a.active{
+    color: #B40431;
+}
+
+
+nav{
+    display: none;
+    width: 100%;
+    height: 6em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    /*transform: translateY(-6.1em);*/
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+}
+nav .logo{
+    display: none;
+    position: absolute;
+    top: 1.3em;
+    left: 1.5em;
+    width: 14em;
+    height: 4em;
+    background-image: url(../img/logo.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+nav .container{
+    width: 34em;
+    margin: auto;
+    margin-top: 2em;
+}
+nav .container ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav .container ul li{
+    display: inline-block;
+    margin: 0.2em;
+    padding: 0.5em;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2em;
+    color: #C0C4C7;
+}
+nav.menuActive{
+    background: #fff;
+    border-bottom: 2px solid #f5f6f7;
+}
+nav.menuActive .container ul li{
+    color: #8C8B8B;
+}
+nav .container ul li:hover{
+   color: #fff; 
+}
+nav.menuActive .container ul li:hover{
+    color: #404040;
+}
+.about{
+    background: #f5f6f7;
+    padding: 4em 0em;
+}
+.about .container{
+    width: 90%;
+    margin: auto;
+}
+.about .container .title{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: #A9AAAB;
+    border-bottom: 1.2px solid #A9AAAB;
+    text-transform: uppercase;
+    line-height: 1.8em;
+}
+.about .container .textInfo{
+    width: 95%;
+    margin: auto;
+    margin-top: 3em;
+}
+.about .container .textInfo h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+.about .container .textInfo p{
+    color: #7B7B7B;
+    font-size: 1em;
+    line-height: 1.8em;
+    quotes: "\201C""\201D""\2018""\2019";
+    text-align: center;
+    padding: 0 0.5em;
+    font-family: 'Fjord One', serif;
+}
+.about .container .textInfo p:before{
+    content: open-quote;
+    font-size: 3em;
+    line-height: 0.1em;
+    margin-right: 0.1em;
+    vertical-align: -0.4em;
+}
+.about .container .textInfo p:after{
+    content: close-quote;
+    font-size: 3em;
+    line-height: 0.1em;
+    margin-left: 0.1em;
+    vertical-align: -0.4em;
+}
+.services{
+    background: white;
+    padding: 4em 0em;
+}
+.services .container{
+    width: 90%;
+    margin: auto;
+}
+.services .container .title{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: #A9AAAB;
+    border-bottom: 1.2px solid #A9AAAB;
+    text-transform: uppercase;
+    line-height: 1.8em;
+}
+.services .container .textInfo{
+    width: 95%;
+    margin: auto;
+    margin-top: 1em;
+    height: 20em;
+}
+.services .container .textInfo .service-item{
+    float: left;
+    width: 100%;
+    height: 10em;
+    position: relative;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+}
+.services .container .textInfo .service-item .content{
+    padding: 0.5em 0.5em;
+    height: 9em;
+}
+.services .container .textInfo .service-item .content .border{
+    border: 2px solid #fff;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+    color: #404040;
+}
+.services .container .textInfo .service-item .content .border .borderBottom{
+    background: #CC0101;
+    width: 100%;
+    height: 0.3em;
+    position: absolute;
+    bottom: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+.services .container .textInfo .service-item .content .border .borderBottom i{
+    font-size: 2em;
+    color: #fff;
+    position: relative;
+    left: 0.2em;
+    top: 0.1em;
+    -webkit-transition: all 0.2s ease-in-out 0.2s;
+    -moz-transition: all 0.2s ease-in-out 0.2s;
+    transition: all 0.2s ease-in-out 0.2s;
+}
+.services .container .textInfo .service-item .content .icon{
+    width: 3em;
+    margin: auto;
+    height: 3em;
+    margin-top: 1em;
+}
+.services .container .textInfo .service-item .content .icon i{
+    position: absolute;
+    font-size: 3em;
+}
+.services .container .textInfo .service-item .content h3{
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 800;
+    line-height: 1.1;
+    text-align: center;
+    font-family: sans-serif;
+    margin-top: 2em;
+}
+
+
+.solutions{
+    background: #f5f6f7;
+    padding: 4em 0em;
+}
+.solutions .container{
+    width: 90%;
+    margin: auto;
+}
+.solutions .container .title{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: #A9AAAB;
+    border-bottom: 1.2px solid #A9AAAB;
+    text-transform: uppercase;
+    line-height: 1.8em;
+}
+.solutions .container .textInfo{
+    width: 95%;
+    margin: auto;
+    margin-top: 0em;
+}
+.solutions .container .textInfo .factoring{
+    width: 100%;
+    height: 15em;
+    margin-top: 2em;
+    position: relative;
+    background: #000;
+    cursor: pointer;
+}
+.solutions .container .textInfo .factoring .back{
+    width: 100%;
+    height: 15em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../img/factoring.jpg");
+    opacity: 0.5;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+.solutions .container .textInfo .factoring h2{
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    top: 4em;
+    left: 1em;
+    position: absolute;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+.solutions .container .textInfo .factoring .arrow{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2em;
+    background: #CC0101;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+.solutions .container .textInfo .factoring .arrow i{
+    font-size: 2em;
+    color: #f5f6f7;
+    position: relative;
+    left: 0.8em;
+    top: 0.1em;
+    -webkit-transition: all 0.3s ease-in-out 0.3s;
+    -moz-transition: all 0.3s ease-in-out 0.3s;
+    transition: all 0.3s ease-in-out 0.3s;
+}
+.solutions .container .textInfo .factoring .arrow span{
+    color: #f5f6f7;
+    position: relative;
+    top: -0.2em;
+    left: 2.5em;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    opacity: 1;
+    -webkit-transition: all 0.3s ease-in-out 0.3s;
+    -moz-transition: all 0.3s ease-in-out 0.3s;
+    transition: all 0.3s ease-in-out 0.3s;
+}
+.solutions .container .textInfo .leasing{
+    width: 100%;
+    height: 15em;
+    margin-top: 2em;
+    position: relative;
+    background: #000;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+}
+.solutions .container .textInfo .leasing .back{
+    width: 100%;
+    height: 15em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../img/leasing.jpg");
+    opacity: 1;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+.solutions .container .textInfo .leasing h2{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    top: 4em;
+    left: 1em;
+    position: absolute;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+.solutions .container .textInfo .leasing .arrow{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2em;
+    background: #CC0101;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+.solutions .container .textInfo .leasing .arrow i{
+    font-size: 2em;
+    color: #f5f6f7;
+    position: relative;
+    left: 0.8em;
+    top: 0.1em;
+    -webkit-transition: all 0.3s ease-in-out 0.3s;
+    -moz-transition: all 0.3s ease-in-out 0.3s;
+    transition: all 0.3s ease-in-out 0.3s;
+}
+.solutions .container .textInfo .leasing .arrow span{
+    color: #f5f6f7;
+    position: relative;
+    top: -0.2em;
+    left: 2.5em;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    opacity: 1;
+    -webkit-transition: all 0.3s ease-in-out 0.3s;
+    -moz-transition: all 0.3s ease-in-out 0.3s;
+    transition: all 0.3s ease-in-out 0.3s;
+}
+
+.clients{
+    background: white;
+    padding: 4em 0em;
+}
+.clients .container{
+    width: 90%;
+    margin: auto;
+}
+.clients .container .title{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: #A9AAAB;
+    border-bottom: 1.2px solid #A9AAAB;
+    text-transform: uppercase;
+    line-height: 1.8em;
+}
+.clients .container .textInfo{
+    width: 95%;
+    margin: auto;
+    margin-top: 0em;
+    height: 32em;
+}
+.clients .container .textInfo .client-item{
+    width: 50%;
+    height: 7em;
+    float: left;
+}
+/*.clients .container .textInfo .client-item:last-of-type{
+    margin-left: 25%;
+}*/
+.clients .container .textInfo .client-item .client-img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 7em;
+    margin: auto;
+    /*-webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);*/
+}
+.clients .container .textInfo .client-item .client-img.macro{
+    background-image: url("../img/logo_macro.jpg");
+}
+.clients .container .textInfo .client-item .client-img.bancor{
+    background-image: url("../img/logo_bancor.jpg");
+}
+.clients .container .textInfo .client-item .client-img.ciudad{
+    background-image: url("../img/logo_ciudad.jpg");
+}
+.clients .container .textInfo .client-item .client-img.hipotecario{
+    background-image: url("../img/logo_hipotecario.jpg");
+}
+.clients .container .textInfo .client-item .client-img.credicoop{
+    background-image: url("../img/logo_credicoop.jpg");
+}
+.clients .container .textInfo .client-item .client-img.multifinanzas{
+    background-image: url("../img/logo_multifinanzas.jpg");
+}
+.clients .container .textInfo .client-item .client-img.federal{
+    background-image: url("../img/logo_federal.jpg");
+}
+.clients .container .textInfo .client-item .client-img.privado{
+    background-image: url("../img/logo_privado.jpg");
+}
+.clients .container .textInfo .client-item .client-img.fiorito{
+    background-image: url("../img/logo_fiorito.jpg");
+}
+.clients .container .textInfo .client-item .client-img.bacs{
+    background-image: url("../img/logo_bacs.jpg");
+}
+.clients .container .textInfo .client-item .client-img.itau{
+    background-image: url("../img/logo_itau.jpg");
+}
+.clients .container .textInfo .client-item .client-img.corporateLeasing{
+    background-image: url("../img/logo_corporateLeasing.jpg");
+}
+
+footer{
+    width: 100%;
+    height: 10em;
+    background: #2A2A3C;
+    position: relative;
+}
+footer .button{
+    border: 1px solid #777786;
+    padding: 1em;
+    margin: auto;
+    width: 13em;
+    position: absolute;
+    top: 2.5em;
+    left: 0;
+    right: 0;
+    border-radius: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+}
+footer .button:hover{
+    background: #8E0000;
+}
+
+.author{
+    background: #EAEAEA;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 1em 0;
+    color: #b7b7b7;
+    font-size: 0.6em;
+    font-family: sans-serif;
+    letter-spacing: 0.5px;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+}
+.author:hover{
+    color: #404040;
+}
+
+@media only screen and (min-width: 40em){
+    .mobileMenu{
+        display: none;
+    }
+    nav{
+        display: block;
+    }
+    header h1{
+        width: 80%;
+        font-size: 4em;
+    }
+    .about{
+        padding: 5em 1em;
+    }
+    .about .container{
+        width: 80%;
+    }
+    .about .container .textInfo h2{
+        font-size: 2em;
+    }
+    .about .container .textInfo p{
+        line-height: 2em;
+    }
+    .about .container .textInfo p:before{
+        font-size: 4em;
+    }
+    .about .container .textInfo p:after{
+        font-size: 4em;
+    }
+    
+    .services{
+        padding: 5em 1em;
+    }
+    .services .container{
+        width: 80%;
+    }
+    .services .container .textInfo{
+        margin-top: 7em;
+        height: 20em;
+    }
+    .services .container .textInfo .service-item{
+        width: 33.33333%;
+        height: 15em;
+    }/*******/
+    .services .container .textInfo .service-item.service1{
+        margin-left: 16.666666%;
+    }/*******/
+    .services .container .textInfo .service-item .content{
+        height: 14em;
+    }
+    .services .container .textInfo .service-item .content .border .borderBottom{
+        height: 0.6em;
+    }
+    .services .container .textInfo .service-item .content .icon{
+        margin-top: 2.5em;
+    }
+    .services .container .textInfo .service-item .content h3{
+        margin-top: 3em;
+    }
+    .services .container .textInfo .service-item:hover .border .borderBottom{
+        height: 2.1em;
+    }
+    .services .container .textInfo .service-item:hover .border .borderBottom i{
+        left: 0.8em;
+    }
+    
+    .solutions{
+        padding: 5em 1em;
+    }
+    .solutions .container{
+        width: 80%;
+    }
+    .solutions .container .textInfo{
+        margin-top: 3em;
+    }
+    .solutions .container .textInfo .factoring{
+        height: 18em;
+        margin-top: 2em;
+    }
+    
+    .solutions .container .textInfo .factoring .back{
+        height: 18em;
+        opacity: 1;
+    }
+    .solutions .container .textInfo .factoring h2{
+        font-size: 1.7em;
+        top: 1em;
+        left: 3em;
+    }
+    .solutions .container .textInfo .factoring .arrow{
+        bottom: 0;
+        height: 0em;
+    }
+    .solutions .container .textInfo .factoring .arrow i{
+        font-size: 2.5em;
+        left: -1.5em;
+        top: 0.1em;
+    }
+    .solutions .container .textInfo .factoring .arrow span{
+        top: -0.2em;
+        left: 2.5em;
+        font-size: 1.2em;
+        opacity: 0;
+    }
+    .solutions .container .textInfo .factoring:hover .back{
+        opacity: 0.5;
+    }
+    .solutions .container .textInfo .factoring:hover h2{
+        top: 4em;
+    }
+    .solutions .container .textInfo .factoring:hover .arrow{
+        height: 3em;
+    }
+    .solutions .container .textInfo .factoring:hover .arrow i{
+        left: 0.8em;
+    }
+    .solutions .container .textInfo .factoring:hover .arrow span{
+        opacity: 1;
+    }
+    
+    .solutions .container .textInfo .leasing{
+        height: 18em;
+        margin-top: 2em;
+    }
+    .solutions .container .textInfo .leasing .back{
+        height: 18em;
+        opacity: 1;
+    }
+    .solutions .container .textInfo .leasing h2{
+        font-size: 1.7em;
+        top: 1em;
+        left: 3em;
+    }
+    .solutions .container .textInfo .leasing .arrow{
+        bottom: 0;
+        height: 0em;
+    }
+    .solutions .container .textInfo .leasing .arrow i{
+        font-size: 2.5em;
+        left: -1.5em;
+        top: 0.1em;
+    }
+    .solutions .container .textInfo .leasing .arrow span{
+        top: -0.2em;
+        left: 2.5em;
+        font-size: 1.2em;
+        opacity: 0;
+    }
+    .solutions .container .textInfo .leasing:hover .back{
+        opacity: 0.6;
+    }
+    .solutions .container .textInfo .leasing:hover h2{
+        top: 4em;
+    }
+    .solutions .container .textInfo .leasing:hover .arrow{
+        height: 3em;
+    }
+    .solutions .container .textInfo .leasing:hover .arrow i{
+        left: 0.8em;
+    }
+    .solutions .container .textInfo .leasing:hover .arrow span{
+        opacity: 1;
+    }
+    
+    .clients{
+        padding: 5em 1em;
+    }
+    .clients .container{
+        width: 80%;
+    }
+    .clients .container .textInfo{
+        margin-top: 3em;
+        height: 27em;
+    }
+    .clients .container .textInfo .client-item{
+        width: 33.3333333%;
+        height: 9em;
+    }    
+    .clients .container .textInfo .client-item:last-of-type{
+        margin-left: 0;
+    }
+    .clients .container .textInfo .client-item .client-img{
+        width: 9em;
+    }
+}
+@media only screen and (min-width: 64em){
+    nav.menuActive .logo {
+        display: block;
+    }
+    .about,.services, .solutions, .clients{
+        padding: 7em 4em;
+    }
+}

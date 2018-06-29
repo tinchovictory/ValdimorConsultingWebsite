@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Valdimor Consulting</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="shortcut icon" href="../img/fav.png" type="image/x-icon" />
+        <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css" />
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Fjord+One' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../css/leasing.css" />
+    </head>
+    <body>
+	<div class="mobileMenu">
+	    <div class="head"><a href="">Menu<div class="menu-icon"><i class="icon-reorder"></i></div></a></div>
+	    <div class="content">
+		<ul id="nav">
+		    <a href="../index.html#about" class="menuButton"><li>Quienes Somos</li></a>
+		    <a href="../index.html#solutions" class="menuButton"><li>Soluciones</li></a>
+		    <a href="../index.html#services" class="menuButton"><li>Servicios</li></a>
+		    <a href="../index.html#clients" class="menuButton"><li>Clientes</li></a>
+		    <a href="contact.php"><li>Contacto</li></a>
+		</ul>
+	    </div>
+	</div>
+	<nav class="active">
+	    <a href="../index.html"><div class="logo"></div></a>
+	    <div class="container">
+		<ul>
+		    <a href="../index.html#about" class="menuButton"><li>Quienes Somos</li></a>
+		    <a href="../index.html#solutions" class="menuButton"><li>Soluciones</li></a>
+		    <a href="../index.html#services" class="menuButton"><li>Servicios</li></a>
+		    <a href="../index.html#clients" class="menuButton"><li>Clientes</li></a>
+		    <a href="contact.php"><li>Contacto</li></a>
+		</ul>
+	    </div>
+	</nav>
+	<div class="site-wrap">
+	    <header>
+		<div class="back"></div>
+		<h1>Sistema de Leasing</h1>
+	    </header>
+	    <section>
+		<div class="container">
+		    
+		    <h2>Software de Leasing</h2>
+		    
+			<ul>
+			    <li>Administra las operaciones de Leasing, brindando elementos para un seguimiento eficiente del proceso de cotizaci&oacute;n, alta del contrato, adquisici&oacute;n de bienes y otorgamiento del cr&eacute;dito, contemplando el cumplimiento de las pol&iacute;ticas definidas y automatizando la contabilidad e interfaces.</li>
+			    <li>Organiza la participaci&oacute;n de los sectores intervinientes durante las distintas etapas del proceso, mediante la interacci&oacute;n permanente del flujo principal, con un flujo secundario de tr&aacute;mites, actividades, opciones de cumplimiento y documentaci&oacute;n.</li>
+			    <li>Permite la descentralizaci&oacute;n de todo el proceso de cotizaciones y verificaci&oacute;n de nuevas operaciones, tanto en sucursales propias del banco como desde vendors autorizados, quienes tienen el contacto directo con el cliente y  hacen de nexo con la Divisi&oacute;n Leasing o sector de operaciones.</li>
+			    <li>Realiza una correcta y eficiente administraci&oacute;n de los bienes desde la adquisici&oacute;n y hasta la finalizaci&oacute;n del proceso de transferencia, baja o recupero del bien.</li>
+			    <li>Realiza la liquidaci&oacute;n y administraci&oacute;n de cada Leasing hasta su efectiva cancelaci&oacute;n, realizando en forma autom&aacute;tica el c&aacute;lculo y d&eacute;bito de c&aacute;nones, considerando tanto los casos normales, como aquellos que incurren en mora o casos especiales como bajas anticipadas.</li>
+			    <li>Realiza la administraci&oacute;n, mediante m&oacute;dulos espec&iacute;ficos, de los Aranceles, Multas, Patentes y Seguros, incluyendo la asignaci&oacute;n de tr&aacute;mites a gestores y el intercambio de informaci&oacute;n con los mismos, tanto en lo concerniente a los pagos que realiza la entidad como a la gesti&oacute;n de recupero en las cuentas del cliente.</li>
+			</ul>
+		    
+		    <p>
+			La aplicaci&oacute;n se encuentra desarrollada &iacute;ntegramente en Tecnolog&iacute;a web, .Net sobre base de datos SQL, permitiendo la distribuci&oacute;n de funciones en todo o parte del proceso a los sectores intervinientes y potenciando la posibilidad de integrar esta aplicaci&oacute;n en entidades externas, tales como proveedores o Vendors, sin requerir ninguna instalaci&oacute;n en los puestos clientes.
+		    </p>
+		    <p>
+			Asimismo cuenta con un potente M&oacute;dulo de Tr&aacute;mites y seguimiento de documentaci&oacute;n parametrizable, que permite personalizar la instalaci&oacute;n acorde al proceso definido por el banco.
+		    </p>
+		    <p>
+			Los procesos de cierre, est&aacute;n desarrollados en la misma tecnolog&iacute;a, contando con un m&oacute;dulo espec&iacute;fico de configuraci&oacute;n de procesos para integrarse a las herramientas de ejecuci&oacute;n de procesos desatendidos, tales como TWS o Control M.
+		    </p>
+		    
+		    
+		</div>
+	    </section>
+	    <footer>
+		<a href="contact.php"><div class="button">Contactanos</div></a>
+	    </footer>
+	    <div class="author">Created by: Martin Victory</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script>
+	    $(document).ready(function(){
+		var lastScrollTop = 0;
+		$(window).scroll(function(event){
+		    var st = $(this).scrollTop();
+		    if (st > 60) {
+			    $("nav").addClass("menuActive");
+			}else{
+			    $("nav").removeClass("menuActive");
+			}
+		   
+		   lastScrollTop = st;
+		});
+		
+		//Menu
+		$('.mobileMenu .head a').click(function(e) {
+		    e.preventDefault();
+		});
+		$(".mobileMenu .head").click(function(){
+		    $(".mobileMenu .content").toggle();
+		    $("body").css("overflow-y","visible");
+		});
+		$(".mobileMenu .content").click(function(){
+		    $(".mobileMenu .content").hide();
+		});
+		$(".site-wrap").click(function(){
+		    $(".mobileMenu .content").hide();
+		});
+		$('.menuButton').click(function(){
+		    $('html, body').animate({
+			scrollTop: $( $.attr(this, 'href') ).offset().top
+		    }, 500);
+		    $(".mobileMenu .content").hide();
+		    return false;
+		});
+	    });
+	</script>
+    </body>
+</html>
